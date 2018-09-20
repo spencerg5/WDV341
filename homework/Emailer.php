@@ -72,6 +72,13 @@
 		
 		public function sendPHPEmail() {
 			
+			$additionalHeaders = 'From: contact@spencergauch.com';
+			
+			$messageFormat = wordwrap($messageline,70,"\r\n");
+			
+			return mail($this->sendToAddress,$this->subjectLine,$messageFormat,$additionalHeaders); //submit mail to host server
+			
+			
 		}
 		
 		

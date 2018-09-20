@@ -6,11 +6,13 @@ $businessEmail = new Emailer(); //instantiation a new instance of a class
 
 $businessEmail->setMessageLine("Hello World");  //loaded a value into the object
 
-$businessEmail->setSenderAddress("spencer.gauch5@gmail.com");
+$businessEmail->setSenderAddress("contact@spencergauch.com");
 
-$businessEmail->setSendToAddress("testing@gmail.com");
+$businessEmail->setSendToAddress("spencer.gauch5@gmail.com");
 
 $businessEmail->setSubjectLine("Test Email");
+
+$validEmail = $businessEmail->sendPHPEmail();
 ?>
 
 <!doctype html>
@@ -26,6 +28,21 @@ $businessEmail->setSubjectLine("Test Email");
 	<p>This email is from: <?php echo $businessEmail->getSenderAddress()?></p>
 	<p>This email is going to: <?php echo $businessEmail->getSendToAddress()?></p>
 	<p>This subject line is: <?php echo $businessEmail->getSubjectLine()?></p>
+	
+	<?php
+		if($validEmail) {
+	?>
+		<p>Thank you for your email. </p>
+	<?php
+		}
+		else 
+		{
+	?>
+		
+		<p>Sorry it didn't work.</p>
+	<?php
+		}
+		?>
 	
 </body>
 </html>

@@ -40,7 +40,7 @@ function characterCount($inString)
 
 function todaysDate()
 {
-	$mydate=getdate(date("U"));
+	$mydate=getdate();
 	return date('l F, d Y');	//Should format the output as Monday January 1, 2016
 }
 

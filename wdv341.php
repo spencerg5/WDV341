@@ -78,6 +78,8 @@ nav a:hover {
 
 <h3>JS Review</h3>      
 	<p><a href = "homework/githubDef.html">Github Definitions</a></p>
+	<p><a href = "homework/phpBasics.php">PHP Basics</a></p>
+	<p><a href = "homework/connectPDO.php">PHP Connect PDO</a></p>
 
 
 </body>
