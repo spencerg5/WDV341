@@ -4,7 +4,7 @@ require 'Emailer.php';
 
 $businessEmail = new Emailer(); //instantiation a new instance of a class
 
-$businessEmail->setMessageLine("Hello World");  //loaded a value into the object
+$businessEmail->setMessageLine("Hello Jeff");  //loaded a value into the object
 
 $businessEmail->setSenderAddress("contact@spencergauch.com");
 
@@ -23,8 +23,10 @@ $validEmail = $businessEmail->sendPHPEmail();
 </head>
 
 <body>
+
+	<h2>WDV 341 Emailer Class Assignment</h2>
 	
-	<p>Your email message is:<?php echo $businessEmail->getMessageLine(); ?></p>
+	<p>Your email message is: <?php echo $businessEmail->getMessageLine(); ?></p>
 	<p>This email is from: <?php echo $businessEmail->getSenderAddress()?></p>
 	<p>This email is going to: <?php echo $businessEmail->getSendToAddress()?></p>
 	<p>This subject line is: <?php echo $businessEmail->getSubjectLine()?></p>
