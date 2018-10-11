@@ -4,6 +4,10 @@
   $name_errMsg = "";
 
   $email_errMsg = "";
+
+  $lab_email = "";
+
+  $lab_name = "";
   
   $valid_form = false;
   	
